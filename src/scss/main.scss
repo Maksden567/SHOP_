@@ -6,11 +6,20 @@
 
 // подключения компонентов страницы
 @import "./components/header";
+@import "./components/title";
+@import "./components/footer";
 
 // тестовые стили, удалите их
-.page__body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--vh);
+ul{
+	list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+	text-decoration: none;
+	color: "black";
+}
+.page__body{
+  position: relative;
+  background: #fff;
 }

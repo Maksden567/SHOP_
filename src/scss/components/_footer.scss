@@ -1,0 +1,224 @@
+.footer {
+    margin-top: 210px;
+
+    &__wrapper {
+        width: 1200px
+    }
+
+    &__block1 {
+        @include flex;
+        padding: 25px;
+        background: #FBFBFB;
+
+    }
+
+    &__block-items {
+        @include flex;
+    }
+
+    &__block-item {
+        width: 204px;
+        margin-right: 62px;
+    }
+
+    &__block-title {
+        font-family: 'CeraPro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 16px;
+        color: #3D3D3D;
+    }
+
+    &__block-subtitle {
+        font-family: 'CeraPro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #727272;
+        max-width: 204px;
+    }
+
+    &__form {
+        &-title {
+            font-family: 'CeraPro';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 16px;
+            color: #3D3D3D;
+
+        }
+
+        &-join {
+            @include flex-v-center;
+
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
+            border-radius: 6px;
+        }
+
+        &-input {
+            background: #FFFFFF;
+            padding: 12px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
+            width: 269px;
+            border: none;
+        }
+
+        &-input::placeholder {
+            font-family: 'CeraPro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #ACACAC;
+        }
+
+        &-btn {
+            padding: 12px 26px;
+            font-family: 'CeraPro';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 16px;
+            border: none;
+            color: #FFFFFF;
+            background: #46A358;
+            border-radius: 0px 6px 6px 0px;
+
+        }
+
+        &-subtitle {
+            font-family: 'CeraPro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 22px;
+            color: #727272;
+            max-width: 354px;
+        }
+    }
+    // block2
+    &__block2 {
+        @include flex-v-center;
+        background: rgba(70, 163, 88, 0.1);
+        padding: 27px 23px;
+        
+        &-logo {
+            margin-right: 87px;
+            margin-top: 3px;
+        }
+
+        &-items {
+            @include flex-v-center;
+
+        }
+
+        &-item {
+            @include flex-v-center;
+            margin-right: 70px;
+        }
+
+        &-title {
+            font-family: 'CeraPro';
+            width: 170px;
+            font-style: normal;
+            margin-left: 9px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: #3D3D3D;
+        }
+    }
+
+    // block3
+    &__block3 {
+        @include flex;
+        padding: 33px 23px;
+        background: #FBFBFB;
+        box-shadow:(0px 1px 1px 0px);
+        &-lists {
+            @include flex-v-center;
+        }
+
+        &-list {
+            width: 137px;
+            margin-right: 127px;
+        }
+
+        &-list-social {
+            width: 188px;
+            margin-bottom: 33px;
+            margin-left: 20px;
+        }
+
+        &-list-accept {
+            width: 244px;
+            margin-left: 20px;
+        }
+
+        &-items {
+            @include flex-v-center;
+        }
+
+        &-title {
+            font-family: 'CeraPro';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 16px;
+            color: #3D3D3D;
+            margin-bottom: 8px;
+
+        }
+
+        &-title-social {
+            margin-bottom: 20px;
+        }
+
+        &-title-accept {
+            margin-bottom: 13px;
+        }
+
+        &-item {
+            font-family: 'CeraPro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 30px;
+            color: #3D3D3D;
+            margin-bottom: 3px;
+        }
+
+        &-item-social {
+            margin-right: 10px;
+            width: 30px;
+            height: 30px;
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+    //copyright
+    .copyright{
+        &__wrapper{
+            width: 100%;
+            @include flex-all-center;
+            padding-top: 7px;
+            padding-bottom: 13px;
+
+        }
+        &__title{
+            font-family: 'CeraPro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 30px;
+            color: #3D3D3D;
+            
+        }
+    }
+}

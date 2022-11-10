@@ -1,0 +1,415 @@
+.title__wrapper{
+    position: relative;
+    
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.swiper-wrapper{
+}
+.swiper-slide{
+    max-width: 100%;
+    background-position: right;
+    max-height: 518px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: #46A358;
+}
+.swiper-pagination-bullet {
+    background: #46A358;
+    
+}
+.main__text{
+    position: absolute;
+    z-index: 100;
+    left: 0;top: 0;
+   max-width: 616px;
+    padding: 68px 0 85px 43px;
+    span{
+        font-family: 'Cera Pro';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: #3D3D3D;
+    }
+
+}
+.main__title{
+    margin-bottom: 7px;
+    margin-top: 7px;
+    h1{
+        font-family: 'CeraPro';
+font-style: normal;
+font-weight: 900;
+font-size: 70px;
+line-height: 70px;
+margin: 0;
+padding: 0;
+text-transform: uppercase;
+color: #3D3D3D;
+span{
+    font-family: 'CeraPro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 70px;
+    
+    text-transform: uppercase;
+    color: #3D3D3D;
+    color: #46A358;
+}
+
+    }
+
+}
+.main__subtitle{
+    margin-bottom: 44px;
+    p{
+        font-family: 'CeraPro';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+margin: 0;
+color: #727272;
+    }
+}
+.main__link{
+    border-radius: 6px;
+    padding: 11px 27px 9px 26px;
+    font-family: 'CeraPro';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+text-transform: uppercase;
+background: #46A358;
+color: #FFFFFF;
+}
+@media screen and (max-width:500px) {
+    .swiper-slide{
+        height: 190px; 
+    }
+   
+}
+@media screen and (max-width:1000px) {
+    .main__text{
+        padding: 34px 0 43px 43px;
+        span{
+    font-size: 10px;
+        }
+    
+    }
+    .main__title{
+        margin-bottom: 7px;
+        margin-top: 7px;
+        h1{
+    font-size: 60px;
+    line-height: 50px;
+    span{
+        font-size: 60px;
+        line-height: 50px;
+    }
+    
+        }
+    
+    }
+    .main__subtitle{
+        margin-bottom: 30px;
+        max-width: 300px;
+        p{
+    font-size: 12px;
+        }
+    }
+    .main__link{
+    font-size: 14px;
+    }
+   
+}
+@media screen and (max-width:860px) {
+    .main__text{
+        padding: 17px 0 21.5px 43px;
+        span{
+    font-size: 8px;
+        }
+    
+    }
+    .main__title{
+        margin-bottom: 17px;
+        margin-top: 7px;
+        width: 500px;
+        h1{
+    font-size: 50px;
+    line-height: 45px;
+    span{
+        font-size: 50px;
+        line-height: 40px;
+    }
+    
+        }
+    
+    }
+    .main__subtitle{
+        margin-bottom: 20px;
+        max-width: 400px;
+        p{
+    font-size: 12px;
+        }
+    }
+    .main__link{
+    font-size: 14px;
+    }
+   
+}
+@media screen and (max-width:769px) {
+    .main__text{
+        padding: 17px 0 21.5px 43px;
+        span{
+    font-size: 8px;
+        }
+    
+    }
+    .main__title{
+        margin-bottom: 0px;
+        margin-top: 0px;
+        width: 300px;
+        h1{
+    font-size: 32px;
+    line-height: 45px;
+    span{
+        font-size: 32px;
+        line-height: 45px;
+    }
+    
+        }
+    
+    }
+    .main__subtitle{
+        margin-bottom: 14px;
+        max-width: 348px;
+        p{
+    font-size: 11px;
+        }
+    }
+    .main__link{
+    font-size: 14px;
+    }
+   
+}
+@media screen and (max-width:690px) {
+    .main__text{
+        padding: 17px 0 21.5px 43px;
+        span{
+    font-size: 8px;
+        }
+    
+    }
+    .main__title{
+        margin-bottom: 0px;
+        margin-top: 0px;
+        width: 300px;
+        h1{
+    font-size: 32px;
+    line-height: 45px;
+    span{
+        font-size: 32px;
+        line-height: 45px;
+    }
+    
+        }
+    
+    }
+    .main__subtitle{
+        width: 400px;
+        overflow: hidden;
+        margin-bottom: 5px;
+        max-width: 348px;
+        p{
+    font-size: 11px;
+        }
+    }
+    .main__link{
+        padding: 0 0 0 0;
+    background: none;
+    font-family: 'CeraPro';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 14px;
+text-transform: uppercase;
+color: #46A358;
+position: relative;
+    }
+    .main__link::after{
+        content: "";
+        width: 16px;
+        height: 16px;
+        background: url('../../img/svg/Arrow\ -\ Right.svg');
+        display: inline-block;
+        position: absolute;
+        right: -18px;
+        top: 0px;
+    }
+   
+}
+@media screen and (max-width:650px) {
+    .main__text{
+        padding: 17px 0 21.5px 43px;
+        span{
+    font-size: 8px;
+        }
+    
+    }
+    .main__title{
+        margin-bottom: 0px;
+        margin-top: 0px;
+        width: 200px;
+        h1{
+    font-size: 20px;
+    line-height: 25px;
+    span{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    
+        }
+    
+    }
+    .main__subtitle{
+        width: 300px;
+        overflow: hidden;
+        margin-bottom: 5px;
+        max-width: 348px;
+        p{
+    font-size: 11px;
+        }
+    }
+    .main__link{
+        padding: 0 0 0 0;
+    background: none;
+    font-family: 'CeraPro';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 14px;
+text-transform: uppercase;
+color: #46A358;
+position: relative;
+    }
+    .main__link::after{
+        content: "";
+        width: 16px;
+        height: 16px;
+        background: url('../../img/svg/Arrow\ -\ Right.svg');
+        display: inline-block;
+        position: absolute;
+        right: -18px;
+        top: 0px;
+    }
+   
+}
+@media screen and (max-width:550px) {
+    .main__text{
+        padding: 24px 0 26px 23px;
+        span{
+    font-size: 8px;
+        }
+    
+    }
+    .main__title{
+        margin-bottom: 5px;
+        margin-top: 0px;
+        width: 200px;
+        h1{
+    font-size: 20px;
+    line-height: 25px;
+    span{font-size: 20px;
+        line-height: 25px;
+    }
+    
+        }
+    
+    }
+    .main__subtitle{
+        width: 206px;
+        overflow: hidden;
+        margin-bottom: 10px;
+        max-width: 348px;
+        p{
+            font-family: 'CeraPro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: #727272;
+        }
+    }
+    .main__link{
+        padding: 0 0 0 0;
+    background: none;
+    font-family: 'CeraPro';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 14px;
+text-transform: uppercase;
+color: #46A358;
+position: relative;
+    }
+    .main__link::after{
+        content: "";
+        width: 16px;
+        height: 16px;
+        background: url('../../img/svg/Arrow\ -\ Right.svg');
+        display: inline-block;
+        position: absolute;
+        right: -18px;
+        top: 0px;
+    }
+   
+}
+
+@media screen and (max-width:400px) {
+    .swiper-slide{
+        height: 160px; 
+    }
+    .main__text{
+        padding: 10px 0 12px 12px;
+        span{
+    font-size: 10px;
+        }}
+        .main__subtitle{
+            width: 150px;
+        }
+   
+}
