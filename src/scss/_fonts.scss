@@ -16,3 +16,9 @@
     font-weight: 500;                  /* разная плотность */
     font-style: normal;
   }
+  @font-face {
+    font-family: 'CeraPro';           /* название одно */
+    src: url('../fonts/CeraPro-Black.woff');     /* разные файлы */
+    font-weight: 900;                  /* разная плотность */
+    font-style: normal;
+  }
