@@ -123,6 +123,8 @@
         &-sorting {
             @include flex;
 
+            margin-right: 15px;
+
         }
 
         &-text {
@@ -166,5 +168,40 @@
         color: #A5A5A5;
         text-decoration: line-through;
         margin-left: 16px;
+    }
+    &__pagination{
+        margin-top: 54px;
+        &-items{
+            @include flex;
+            justify-content: flex-end;
+        }
+        &-item{
+            margin-right: 10px;
+        }
+        &-link{
+            padding: 10px 14px 9px 14px;
+            border: 1px solid #E5E5E5;
+    border-radius: 4px;
+            
+        }
+        &-link.active{
+            padding: 7px 14px 7px 14px;
+            font-family: 'CeraPro';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 16px;
+color: #FFFFFF;
+background: #46A358;
+border-radius: 4px;
+border:none;
+        }
+        &-item:last-child{
+            margin-right: 0;
+            .products__pagination-link{
+                padding: 14px 14px 4px 14px;
+            }
+        }
+
     }
 }
