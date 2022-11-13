@@ -1,44 +1,142 @@
-.products{
-    &__wrapper{
-        margin-left: 50px;
-    }
+.products {
     max-width: 840px;
     width: 100%;
-    &__top{
+
+    &__item {
+
+        cursor: pointer;
+
+
+        svg {
+            fill: #3D3D3D;
+            cursor: pointer;
+            margin-right: 27px;
+        }
+
+        svg:hover {
+            fill: #46A358;
+        }
+
+        svg:not(svg:last-child) {
+            margin-right: 27px;
+        }
+    }
+
+    &__image {
+        transition: all ease 1s;
+        margin-bottom: 32px;
+        position: relative;
+        width: 258px;
+        height: 300px;
+        background: #FBFBFB;
+
+        img {
+            transition: all ease 1s;
+        }
+    }
+
+    &__descr {
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        transition: all ease 1s;
+        width: 100%;
+        bottom: 7px;
+        position: absolute;
+    }
+
+    &__item:hover &__descr {
+        width: 100%;
+        bottom: 7px;
+        position: absolute;
+        opacity: 1;
+
+    }
+&__items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+    &__image:hover {
+        img {
+            transform: scale(1.1);
+        }
+
+    }
+
+    &__title {
+        margin-bottom: 6px;
+
+        h5 {
+            margin: 0;
+            font-family: 'CeraPro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 16px;
+            color: #3D3D3D;
+        }
+    }
+
+    &__price {
+        font-family: 'CeraPro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 16px;
+        color: #46A358;
+
+    }
+
+    &__wrapper {
+        margin-left: 50px;
+    }
+
+    &__top {
         @include flex-all-sb;
         margin-right: 5px;
-        &-items{
+
+        &-items {
             @include flex-v-center;
         }
-        &-item{
+
+        &-item {
             margin-right: 40px;
         }
-        &-link{
+
+        &-link {
             font-family: 'CeraPro';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 16px;
-color: #3D3D3D;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 16px;
+            color: #3D3D3D;
         }
-        &-link.active{
+
+        &-link.active {
             color: #46A358;
-            border-bottom: 2px solid #46A358;;
+            border-bottom: 2px solid #46A358;
+            ;
             padding-bottom: 7px;
         }
-        &-sorting{
+
+        &-sorting {
             @include flex;
+
             margin-right: 15px;
+
         }
-        &-text{
+
+        &-text {
             font-family: 'CeraPro';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 16px;
-color: #3D3D3D;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 16px;
+            color: #3D3D3D;
         }
-        &-option{
+
+        &-option {
             font-family: 'CeraPro';
             font-style: normal;
             font-weight: 400;
@@ -48,15 +146,28 @@ color: #3D3D3D;
             margin-left: 8px;
             position: relative;
         }
-        &-option::after{
+
+        &-option::after {
             content: "";
             display: inline-block;
-            background:url(../../img/Arrow\ -\ Down\ 2.png);
-            position:absolute;
+            background: url(../../img/Arrow\ -\ Down\ 2.png);
+            position: absolute;
             width: 16px;
             height: 16px;
             margin-left: 5px;
         }
+
+    }
+
+    span {
+        font-family: 'CeraPro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 16px;
+        color: #A5A5A5;
+        text-decoration: line-through;
+        margin-left: 16px;
     }
     &__pagination{
         margin-top: 54px;
