@@ -28,5 +28,7 @@ a{
 }
 .main__wrapper{
   @include flex;
-  max-width: 100%;
+  width: 100%;
+  margin-top: 30px;
+  margin-left: -15px;
 }

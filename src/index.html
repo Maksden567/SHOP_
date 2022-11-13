@@ -12,9 +12,15 @@
 
       @include('partials/info.html')
       @include('partials/blog.html')
-      <div class="main__wrapper">
-        @include('partials/filter.html')
-        @include('partials/products.html')
+      <div class="main__block">
+        <div class="container">
+          <div class="main__wrapper">
+           @include('partials/filter.html')
+        @include('partials/products.html') 
+          </div>
+          
+        </div>
+        
       </div>
       
     </main>
