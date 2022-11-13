@@ -1,0 +1,61 @@
+.products{
+    &__wrapper{
+        margin-left: 50px;
+    }
+    max-width: 840px;
+    width: 100%;
+    &__top{
+        @include flex-all-sb;
+        margin-right: 5px;
+        &-items{
+            @include flex-v-center;
+        }
+        &-item{
+            margin-right: 40px;
+        }
+        &-link{
+            font-family: 'CeraPro';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 16px;
+color: #3D3D3D;
+        }
+        &-link.active{
+            color: #46A358;
+            border-bottom: 2px solid #46A358;;
+            padding-bottom: 7px;
+        }
+        &-sorting{
+            @include flex;
+           
+        }
+        &-text{
+            font-family: 'CeraPro';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 16px;
+color: #3D3D3D;
+        }
+        &-option{
+            font-family: 'CeraPro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 16px;
+            color: #3D3D3D;
+            margin-left: 8px;
+            position: relative;
+        }
+        &-option::after{
+            content: "";
+            display: inline-block;
+            background:url(../../img/Arrow\ -\ Down\ 2.png);
+            position:absolute;
+            width: 16px;
+            height: 16px;
+            margin-left: 5px;
+        }
+    }
+}
