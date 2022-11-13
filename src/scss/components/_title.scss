@@ -93,7 +93,7 @@ span{
 
 }
 .main__subtitle{
-    margin-bottom: 44px;
+    margin-bottom: 20px;
     p{
         font-family: 'CeraPro';
 font-style: normal;
@@ -121,6 +121,19 @@ color: #FFFFFF;
         height: 190px; 
     }
    
+}
+@media screen and (max-width:1200px) {
+    .main__text {
+        position: absolute;
+        z-index: 100;
+        left: 0;
+        top: 0;
+        max-width: 616px;
+        padding: 17px 0 85px 43px;
+    }
+    .main__subtitle {
+        margin-bottom: 15px;
+    }
 }
 @media screen and (max-width:1000px) {
     .main__text{
@@ -412,4 +425,7 @@ position: relative;
             width: 150px;
         }
    
+}
+.swiper-pagination{
+    z-index: 1000;
 }

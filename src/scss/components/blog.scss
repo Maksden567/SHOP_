@@ -1,0 +1,126 @@
+.blog {
+    &__wrapper {}
+
+    &__title {
+       
+        width: 100%;
+        margin: 0;
+        padding: 0 15px;
+        h2 {
+            font-family: 'CeraPro';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 16px;
+            text-align: center;
+            color: #3D3D3D;
+
+        }
+    }
+
+    &__subtitle {
+        padding: 0 15px;
+        width: 100%;
+        p {
+            font-family: 'CeraPro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+            color: #727272;
+        }
+    }
+    .blog__descr{
+        padding: 9px 11px 12px 15px;
+        background: #FBFBFB;
+        
+    }
+    &__items{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item {
+        width: 268px;
+        span {
+            font-family: 'CeraPro';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #46A358;
+
+        }
+
+        &-title {
+            margin-top: 4px;
+            margin-bottom: 4px;
+            width: 189px;
+            h4 {
+                margin: 0;
+                padding: 0;
+                font-family: 'CeraPro';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 26px;
+                color: #3D3D3D;
+
+            }
+        }
+
+        &-subtitle {
+            margin-bottom: 9px;
+            p {
+                margin: 0;
+                padding: 0;
+                font-family: 'CeraPro';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: #3D3D3D;
+
+            }
+        }
+
+        &-link {
+            font-family: 'CeraPro';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #3D3D3D;
+            position: relative;
+        }
+        &-link::after{
+            content: "";
+            display: inline-block;
+            position: absolute;
+            background: url("../../img/svg/blog-right.svg");
+            right: -20px;
+            top: 2px;
+            width: 16px;
+            height: 16px;
+        }
+       
+    }
+    &__item:not(.blog__item:last-child){
+        margin-right: 32px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .blog__item{
+        margin-bottom: 32px;
+    }
+    .blog__item:not(.blog__item:last-child){
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width:550px) {
+    .blog__item:not(.blog__item:last-child){
+        margin-right: 0px;
+    }
+}
