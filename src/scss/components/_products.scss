@@ -3,7 +3,7 @@
     width: 100%;
 position: relative;
     &__item {
-
+        margin-bottom: 70px;
         cursor: pointer;
 
 
@@ -23,6 +23,9 @@ position: relative;
     }
 
     &__image {
+        display: flex;
+        justify-content: center;
+
         transition: all ease 1s;
         margin-bottom: 32px;
         position: relative;
@@ -31,6 +34,8 @@ position: relative;
         background: #FBFBFB;
 
         img {
+            width: 250px;
+            height: 250px;
             transition: all ease 1s;
         }
     }
@@ -53,6 +58,7 @@ position: relative;
 
     }
 &__items{
+    margin-top: 31px;
     z-index: -1;
     display: flex;
     justify-content: space-between;
@@ -171,7 +177,7 @@ position: relative;
         margin-left: 16px;
     }
     &__pagination{
-        margin-top: 54px;
+        margin-top: 0px;
         &-items{
             @include flex;
             justify-content: flex-end;
