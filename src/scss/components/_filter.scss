@@ -104,6 +104,9 @@ border:none;
         margin-top: 12px;
     }
 }
+.filter__close{
+   display: none;
+}
 input[type=range] {width:209px;-webkit-appearance: none; margin: 5.8px 0; background-color: transparent !important;}
 
 input[type=range]:focus {outline: none;}
@@ -133,3 +136,109 @@ input[type=range]::-ms-track {height: 4px;}
 input[type=range]::-webkit-slider-thumb {height: 20px; width: 20px;}
 input[type=range]::-moz-range-thumb {height: 15px; width: 15px;}
 input[type=range]::-ms-thumb {height: 15px; width: 15px;}
+
+
+@media screen and (max-width:980px) {
+ 
+    .filter__wrapper{
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .filter__block1{
+    
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .filter__block3{
+    
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .filter__block2{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .filter__block2-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .filter__banner{
+        display: none;
+    }
+}
+@media screen and (max-width:756px) {
+    
+    .overlap.active {
+        background: black;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 1001;
+        opacity: 0.9;
+        transition: all ease 1s;
+    }
+ .filter{
+    position: absolute;
+    left: -400px;
+    height: 100%;
+ }
+ .container{
+    height: 100%;
+ }
+    .filter__wrapper{
+        max-width: 100%;
+        width: 315px;
+        height: 720px;
+        overflow: auto;
+        display: block;
+        justify-content: space-between;
+        position: relative;
+    }
+    .filter__block1{
+    
+        display: block;
+        flex-direction: column;
+        align-items:center;
+    }
+    .filter__block3{
+    
+        display: block;
+        flex-direction: column;
+        align-items:center;
+    }
+    .filter__block2{
+        display: block;
+        flex-direction: column;
+        align-items:center;
+    }
+    .filter__block2-wrapper{
+        display: block;
+        flex-direction: column;
+        align-items:center;
+    }
+    .filter__banner{
+        display: none;
+    }
+    .filter.active {
+        top: 0px;
+        left: -17px;
+        height: 1011px;
+        z-index: 1001;
+        transition: all ease 1s;
+    }
+    .filter__close{
+        display: block;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        right: 23px;
+        top: 40px;
+    }
+}
