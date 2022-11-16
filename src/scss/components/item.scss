@@ -1,0 +1,109 @@
+.page__item{
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+    .slider{
+        position: relative;
+    }
+    .swiper2 {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      padding-bottom: 61px;
+    }
+    .products__image{
+        width: 220px;
+        height: 255px;
+        margin-bottom: 30px;
+    }
+    .products__item{
+        display: flex;
+        margin-bottom: 0px;
+        cursor: pointer;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .products__title {
+        margin-left: 5px;
+    }
+    .products__price {
+       
+        margin-left: 5px;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .swiper-pagination{
+        margin-top: 61px;
+    }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+   
+}
+@media screen and (max-width:756px) {
+    
+    .page__item .products__image{
+        width: 180px;
+        height: 235px;
+    }
+}
+@media screen and (max-width:640px) {
+    
+    .page__item .products__image{
+        width: 160px;
+        height: 215px;
+    }
+}
+@media screen and (max-width:566px) {
+    
+    .page__item .products__image{
+        width: 220px;
+        height: 255px;
+    }
+}
+@media screen and (max-width:500px) {
+    .page__item .swiper-slide{
+        height:303px;
+    }
+    .page__item .products__image{
+        width: 180px;
+        height: 235px;
+    }
+}
+@media screen and (max-width:425px) {
+    .page__item .products__item{
+       margin-right: 0;
+       align-items:center;
+    }
+}

@@ -195,7 +195,7 @@ input[type=range]::-ms-thumb {height: 15px; width: 15px;}
     .filter__wrapper{
         max-width: 100%;
         width: 315px;
-        height: 680px;
+        height: 720px;
         overflow: auto;
         display: block;
         justify-content: space-between;
@@ -246,6 +246,7 @@ input[type=range]::-ms-thumb {height: 15px; width: 15px;}
     .products__top-items {
         align-items: flex-start;
         flex-direction: column;
+        z-index: -1;
     }
     .products__top-item{
         margin-bottom: 12px;
@@ -255,6 +256,7 @@ input[type=range]::-ms-thumb {height: 15px; width: 15px;}
     .products__top-sorting {
         margin-right: 10px;
         flex-direction: column;
+        
     }
     .products__top-option {
         margin-left: 0;

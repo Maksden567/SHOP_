@@ -13,6 +13,7 @@
 @import "./components/info";
 @import "./components/products";
 @import "./components/filter";
+@import "./components/item";
 ul{
 	list-style: none;
   margin: 0;
@@ -32,6 +33,24 @@ a{
   margin-top: 30px;
   margin-left: -15px;
   position: relative;
+}
+
+.swiper-pagination-bullet{
+
+  border: 1.3px solid #46A358;
+  background:none;
+  opacity: 1;
+
+}
+.swiper-pagination-bullet:nth-child(4){
+  display: none;
+}
+
+.swiper-pagination-bullet-active{
+
+  border: 1.3px solid #46A358;
+  background:#46A358;
+
 }
 @media screen and (max-width:756px) {
   .main__wrapper{

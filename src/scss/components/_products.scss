@@ -129,7 +129,7 @@ position: relative;
 
         &-sorting {
             @include flex;
-
+            z-index: -1;
             margin-right: 15px;
 
         }
@@ -178,6 +178,7 @@ position: relative;
     }
     &__pagination{
         margin-top: 0px;
+        z-index: -1;
         &-items{
             @include flex;
             justify-content: flex-end;
@@ -232,6 +233,11 @@ border:none;
     }
     .products__filter-btn{
         display: none;
+     }
+     .products__item .products__descr a:last-child{
+        svg{
+            margin-right: 0;
+        }
      }
 @media screen and (max-width:1150px) {
     .products{

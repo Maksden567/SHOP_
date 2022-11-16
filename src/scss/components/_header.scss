@@ -203,6 +203,7 @@ img{
         bottom: 0px;
         width: 100%;
         display: flex;
+        z-index: 1;
       }
       
       .block::before,
