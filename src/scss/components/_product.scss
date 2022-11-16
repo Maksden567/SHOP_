@@ -248,10 +248,10 @@ color: #5d5d5d;
 }
     }
 }
-.social{
+.product__social{
     @include flex-v-center;
     margin-top: 18px;
-    &__title{
+    &-title{
         font-family: 'CeraPro';
         font-style: normal;
         font-weight: 500;
@@ -259,11 +259,11 @@ color: #5d5d5d;
         line-height: 16px;
         color: #3D3D3D;
     }
-    &__links{
+    &-links{
         @include flex-v-center;
         margin-left: 16px;
     }
-    &__link{
+    &-link{
        margin-right: 18px;
 
     }
