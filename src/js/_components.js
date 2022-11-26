@@ -8,10 +8,18 @@ let filterBtn2=document.querySelector(".header-filter")
 let filterClose=document.querySelector(".filter__close")
 let itemWrapper=document.querySelector(".item__text__wrapper")
 let itemBtn=document.querySelector(".item__text-btn")
+let tabsLink=document.querySelectorAll(".modal__tab1")
+const btnLogin=document.querySelector(".btn-login")
+const modal=document.querySelector(".modal__block")
+const modalClose=document.querySelector('.modal__close-btn')
+const modalOverlap=document.querySelector('.modal-overlap')
 console.log(location.pathname)
 if(location.pathname=="/item.html"){
     let itemWrapper=document.querySelector(".item__text__wrapper")
     let itemBtn=document.querySelector(".item__text-btn")
+    let itemsImg=document.querySelectorAll(".product__left-item>img")
+    let centerItem =document.querySelector(".product__center-item>img")
+
     console.log(89789)
     
     itemBtn.addEventListener("click",function(){
@@ -24,10 +32,17 @@ if(location.pathname=="/item.html"){
        }
     })
 
-    
+    itemsImg.forEach(item=>{
+        item.addEventListener('click',function(){
+            let atribute = item.getAttribute("src")
+            centerItem.setAttribute("src",atribute)
+        })
+    })
     
 }
 else{
+
+
     filterbtn.addEventListener("click",function(){
         filter.classList.toggle("active")
     })
@@ -51,5 +66,32 @@ else{
         title.setAttribute('src',"../img/title-bg380px.png")
         subtitle.textContent="We are an online plant shop offering a wide range"
     }
-    console.log("vasya")
+    tabsLink.forEach(item=>{
+        
+        item.addEventListener('click',function(){
+            tabsLink.forEach(item=>{
+                const currentId = item.getAttribute('data-tab')
+                const currentItem = document.getElementById(currentId)
+                currentItem.classList.remove('active')
+                item.classList.remove('active')
+
+            })
+            item.classList.add('active')
+             const currentId = item.getAttribute('data-tab')
+        const currentItem = document.getElementById(currentId)
+        currentItem.classList.add('active')
+        })
+    })
+    btnLogin.addEventListener('click',function(){
+        modal.classList.add('active')
+        body.style.height="700px"
+        body.style.overflow="hidden"
+        modalOverlap.classList.add('active')
+    })
+    modalClose.addEventListener('click',function(){
+        modal.classList.remove('active')
+        body.style.height="100%"
+        body.style.overflow="auto"
+        modalOverlap.classList.remove('active')
+    })
 }

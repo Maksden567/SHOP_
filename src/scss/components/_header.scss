@@ -309,7 +309,11 @@ img{
 @media screen and (max-width: 390px){
     .blocks1-img {
         left: 40%;
-    }}
+    }
+    .blocks svg:first-child {
+        margin-right: 32px;
+    }
+}
     @media screen and (max-width: 350px){
         .blocks1-img {
             left: 38%;

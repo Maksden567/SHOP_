@@ -1,0 +1,154 @@
+.cart__block {
+    margin-top: 100px;
+    margin-bottom: 87px;
+}
+
+.header2 {
+    display: none;
+}
+.page__cart .footer {
+    margin-top: 128px;
+}
+.cart__block-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.slider{
+    position: relative;
+    z-index: 0;
+}
+.swiper2 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-bottom: 61px;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper-pagination{
+      margin-top: 61px;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .products__item{
+    display: flex;
+    margin-bottom: 0px;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: c
+}
+.products__title {
+    margin-left: 5px;
+}
+.products__price {
+   
+    margin-left: 5px;
+}
+.products__image{
+    width: 220px;
+    height: 255px;
+    margin-bottom: 30px;
+}
+ 
+@media screen and (max-width:1180px) {
+    .cart__block-wrapper {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:755px) {
+    .page__cart {
+        .header {
+            display: none;
+
+        }
+
+        .block {
+            display: none;
+        }
+        .products__image{
+            width: 180px;
+            height: 235px;
+        }
+        .header2 {
+            margin-top: 33px;
+            display: block;
+            position: relative;
+
+            &__wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &__image {
+                position: absolute;
+                left: 28px;
+                top: -10px;
+            }
+
+            &__title {
+                font-family: 'CeraPro';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 16px;
+                color: #3D3D3D;
+
+            }
+        }
+    }
+
+  
+}
+@media screen and (max-width:640px) {
+    
+.products__image{
+        width: 160px;
+        height: 215px;
+    }
+}
+@media screen and (max-width:566px) {
+    
+     .products__image{
+        width: 220px;
+        height: 255px;
+    }
+}
+@media screen and (max-width:500px) {
+   .page__cart .swiper-slide{
+        height:303px;
+    }
+    .products__image{
+        width: 180px;
+        height: 235px;
+    }
+}
+@media screen and (max-width:425px) {
+    .products__item{
+       margin-right: 0;
+       align-items:center;
+    }
+}
