@@ -1,0 +1,85 @@
+.page__login {
+    padding-bottom: 37px;
+    .login__logo {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .login-input {
+        width: 100%;
+        padding-top: 16px;
+        padding-bottom: 18px;
+        padding-left: 16px;
+        border: 1px solid #EAEAEA;
+        border-radius: 10px;
+    }
+
+    .login-input:first-child {
+        margin-bottom: 20px;
+    }
+
+    .login-input::placeholder {
+        font-family: 'CeraPro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #A5A5A5;
+    }
+    .login-input:last-child {
+      margin-bottom: 12px;
+    }
+    .login-btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        button{
+            max-width: 432px;
+        }
+    }
+    .login__btns{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .login__fogot{
+        max-width: 432px;
+    }
+    .login-with{
+       padding-left: 37px;
+       max-width: 432px;
+       margin-bottom: 10px;
+    }
+    .login-with::after {
+        left: 34%;
+    }
+    .aunt-link {
+        text-align: center;
+        font-family: 'CeraPro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 16px;
+        color: #727272;
+        margin-top: 10px;
+        span{
+            a{
+                color:#46A358;
+            }
+           
+        }
+
+    }
+}
+@media screen and (max-width:420px) {
+    .page__login .login-with::after {
+        left: 30%;
+    }
+}
+@media screen and (max-width:360px) {
+    .page__login .login-with::after {
+        left: 27%;
+    }
+}

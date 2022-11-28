@@ -3,38 +3,19 @@
 
 @include('partials/head.html')
 
-<body class="page__body">
+<body class="page__login">
  
   <div class="site-container">
-    <div class="overlap"> </div>
-    <div class="modal-overlap"> </div>
-    @include('partials/header.html')
     <main class="main">
-      @include('partials/title.html') 
-      <div class="main__block">
-        <div class="container">
-          <div class="main__wrapper">
-            @include('partials/filter.html') 
-        @include('partials/products.html') 
-          </div>
-          
-        </div>
-        
-      </div>
-<div class="modal__block" >
-  <div class="modal">
+<div class="login-modal__block" >
+    <div class="container">
+        <div class="login-modal">
         <div class="modal__wrapper">
+            <div class="login__logo"><img src="./img/login-logo.png" alt=""></div>
           <div class="login__titles">
-             <div class="modal__tab1 active" data-tab="login-tab-login"><h3>Login</h3></div>
-          <span>|</span>
-          <div class="modal__tab1" data-tab="login-tab-register"><h3>Register</h3></div>
+             <div class="modal__tab1"><h3>Login</h3></div>
+       
           </div>
-          <div class="login-tab active" id="login-tab-login">
-          <div class="login__subtitle">
-           <p>
-            Enter your username and password to login.
-           </p>
-         </div>
          <div class="login__block">
           <input   class = "login-input"type="text" placeholder="almamun_uxui@outlook.com">
           <input  class = "login-input"type="password" placeholder="password">
@@ -66,20 +47,22 @@
             <span></span>
            </div>
             </div>
-            <div class="modal__close-btn"><img src="../img/svg/X.svg" alt=""></div>
-       <button class="login-with">Login with Google</button>
-          <button class="login-with login-with-facebook">Login with Facebook</button>
+            <div class="login__btns">
+                <button class="login-with">Login with Google</button>
+                <button class="login-with login-with-facebook">Login with Facebook</button>
+            </div>
+            <div class="aunt-link">Don’t have an account? <span><a href="./register.html"> Sign Up</a></span></div>
         </div>
+    </div>
+  
       </div>
 </div>
       
-      @include('partials/info.html')
-      @include('partials/blog.html')
+
+
     
       
     </main>
-
-    @include('partials/footer.html')
     <!-- @include('html/h1.html') пример include -->
   </div>
 </body>
