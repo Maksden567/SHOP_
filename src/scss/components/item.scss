@@ -96,10 +96,25 @@
 @media screen and (max-width:500px) {
     .page__item .swiper-slide{
         height:303px;
+        background: linear-gradient(143.28deg, #F4F4F4 -12%, #FAFAFA 106.59%);
+        img{
+            background: linear-gradient(143.28deg, #F4F4F4 -12%, #FAFAFA 106.59%);
+        }
     }
     .page__item .products__image{
         width: 180px;
         height: 235px;
+    }
+    .page__item .footer__block3 {
+        padding: 82px 23px;
+
+    }
+    .swiper{
+        z-index: 1;
+    }
+    .item__text {
+        margin-top: 40px;
+        margin-bottom: 30px;
     }
 }
 @media screen and (max-width:425px) {

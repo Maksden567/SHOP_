@@ -34,7 +34,6 @@ position: relative;
         background: #FBFBFB;
 
         img {
-           
             transition: all ease 1s;
         }
     }
@@ -254,7 +253,9 @@ border:none;
         margin-bottom: 20px;
     }
     }
-
+    .products__pagination-items {
+        margin-top: 20px;
+    }
 }
 @media screen and (max-width:980px){
     .filter{
@@ -279,15 +280,19 @@ border:none;
     .products__top{
         width: 100%;
     }
-    .products__wrapper{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+
     .products__filter-btn{
        display: flex;
        justify-content: center;
        align-items:center;
+    }
+    .products__pagination-items {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: center;
     }
 }
 @media screen and (max-width:756px) {
