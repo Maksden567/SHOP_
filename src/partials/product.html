@@ -1,6 +1,7 @@
 <section class="product">
     <div class="container">
         <div class="product__wrapper">
+            <div class="product__together">
             <div class="product__left">
                 <div class="product__left-item">
                     <img class="product__left-img" src="../img/product__left-img.png" alt="">
@@ -21,6 +22,21 @@
                     <img class="product__center-search"src="../img/svg/Search1.svg" alt="">
                 </div>
             </div>
+        </div>
+        <div class="swiper mySwiper3">
+            <div class="swiper__imgs">
+                <a href="#"><img class="product__back" src="../img/svg/back.svg" alt=""></a>
+                <img class="product__like" src="../img/like__product.png" alt="">
+            </div>
+          
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">  <img class="product__left-img" src="../img/product__img2.png" alt=""></div>
+              <div class="swiper-slide"><img class="product__left-img" src="../img/product__img2.png" alt=""></div>
+              <div class="swiper-slide swiper-slide3"><img class="product__left-img" src="../img/product__img2.png" alt=""></div>
+            </div>
+            <div class="swiper3-pagination"></div>
+          </div>
+          
             <div class="product__right">
                 <div class="product__right-top">
                     <h2 class="product__right-title">Barberton Daisy</h2>
@@ -118,4 +134,39 @@
 
         </div>
     </div>
+    <div class="product__bottom">
+        <div class="container">
+        <div class="product__bottom-wrapper">
+        <div class="product__bottom-up">
+            <div class="product__bottom-block">
+            <div class="product__bottom-valute">Qty</div>
+            <div class="product__right-number">
+                <div class="product__right-sign plus"><img src="../img/product__plus.png" alt=""></div>
+                <div class="product__right-count">1</div>
+                <div class="product__right-sign minus"><img src="../img/product__minus.png" alt=""></div>
+            </div>
+            </div>
+            <div class="product__right-price">$119.00</div>
+        </div>
+        <div class="product__bottom-down">
+            <div class="product__bottom-btns">
+            <button class="product__bottom-buy">Buy Now</button>
+            <a class="product__bottom-link" href="#">
+                <img class="product__bottom-img" src="../img/cart1.png" alt="">
+            </a>
+        </div>
+    </div>
+    </div>
+    </div>
 </section>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+    
+    var swiper = new Swiper(".mySwiper3", {
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper3-pagination",
+        clickable: true,
+      },
+    });
+  </script>
